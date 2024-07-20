@@ -1,0 +1,97 @@
++-------------------+      +-------------------+      +-------------------+
+|      Artwork      |      |      Artist       |      |    Exhibition     |
++-------------------+      +-------------------+      +-------------------+
+| - ID              |      | - ID              |      | - ID              |
+| - title           |      | - name            |      | - title           |
+| - description     |      | - biography       |      | - startDate       |
+| - creationDate    |      | - birthDate       |      | - endDate         |
+| - medium          |      | - deathDate       |      | - location        |
+| - dimensions      |      | - nationality     |      | - theme           |
+| - value           |      +-------------------+      +-------------------+
++-------------------+      | + displayProfile()|      | + scheduleExh()   |
+| + displayInfo()   |      | + addArtwork()    |      | + displayExhDet() |
+| + calcInsValue()  |      +-------------------+      +-------------------+
++-------------------+                            \             /   
+         |                                        \           /
+         |                                        +-----------+
+         |                                         one-to-many
+         |                                           (is part of)
+         V
++-------------------+                        +-------------------+
+|      Sale         |------------------------|    Collector      |
++-------------------+                        +-------------------+
+| - ID              |                        | - ID              |
+| - artwork         |                        | - name            |
+| - saleDate        |                        | - contactInfo     |
+| - salePrice       |                        | - collection      |
+| - buyer           |                        +-------------------+
++-------------------+                        | + displayCollInf()|
+| + recordSale()    |                        | + addArtToColl()  |
+| + generateRec()   |                        +-------------------+
++-------------------+                        
+          |
+          |
+          |          
+          V
++-------------------+
+|     Catalog       |
++-------------------+
+| - ID              |
+| - title           |
+| - publicationDate |
+| - artworks        |
++-------------------+
+| + addArtwork()    |
+| + displayCatalog()|
++-------------------+
+
++-------------------+       +-------------------+       +-------------------+
+|      Loan         |       |     Promotion     |       |    Inventory      |
++-------------------+       +-------------------+       +-------------------+
+| - ID              |       | - ID              |       | - ID              |
+| - artwork         |       | - campaignName    |       | - artwork         |
+| - borrower        |       | - startDate       |       | - location        |
+| - loanStartDate   |       | - endDate         |       | - quantity        |
+| - loanEndDate     |       | - budget          |       +-------------------+
+| - conditions      |       +-------------------+       | + addArtwork()    |
++-------------------+       | + startCampaign() |       | + updateLocation()|
+| + initiateLoan()  |       | + endCampaign()   |       +-------------------+
+| + returnLoan()    |       | + displayPromDet()|
++-------------------+       +-------------------+     
+                                              \
+                                               \          
+                                                +-------------+
+                                                 one-to-many
+                                                  (is managed by)
+                                                       
++-------------------+
+|   Conservation    |
++-------------------+
+| - ID              |
+| - artwork         |
+| - conservationDate|
+| - description     |
+| - conservator     |
++-------------------+
+| + scheduleCons()  |
+| + displayConsDet()|
++-------------------+
+
+
+
+
+
+
+
+
+
+
+
+| - ID              |      | - ID              |      | - ID              |
+| - title           |      | - name            |      | - title           |
+| - description     |      | - biography       |      | - startDate       |
+| - creationDate    |      | - birthDate       |      | - endDate         |
+| - medium          |      | - deathDate       |      | - location        |
+| - dimensions      |      | - nationality     |      | - theme           |
+| - value           |      +-------------------+      +-------------------+
+
