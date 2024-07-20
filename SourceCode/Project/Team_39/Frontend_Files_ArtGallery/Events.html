@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery Management System - Events</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        header {
+            width: 100%;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .event {
+            display: flex;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+        }
+        .event img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        .event-details {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .event-title {
+            font-size: 24px;
+            margin: 0;
+        }
+        .event-date, .event-location {
+            color: #888;
+            margin: 5px 0;
+        }
+        .event-description {
+            margin: 10px 0;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h1>Art Gallery Management System</h1>
+        <h2>Upcoming Events</h2>
+    </header>
+    <div class="container">
+        <div class="event">
+            <img src="https://th.bing.com/th/id/OIP.KbGWjmHe4U_6v1okUeDNbAAAAA?rs=1&pid=ImgDetMain" alt="Event1">
+            
+            <div class="event-details">
+                <h3 class="event-title">Abstract Art Exhibition</h3>
+                <p class="event-date">Date: July 25, 2024</p>
+                <p class="event-location">Location: Main Hall, Art Gallery</p>
+                <p class="event-description">Explore the world of abstract art with works from renowned artists. Join us for an immersive experience in abstract expressionism.</p>
+            </div>
+        </div>
+        <div class="event">
+            <img src="https://th.bing.com/th/id/OIP.hNdVE_lSKu06LCar5Nr4cgHaE8?rs=1&pid=ImgDetMain" alt="Event 2">
+            <div class="event-details">
+                <h3 class="event-title">Contemporary Sculptures</h3>
+                <p class="event-date">Date: August 10, 2024</p>
+                <p class="event-location">Location: Sculpture Garden, Art Gallery</p>
+                <p class="event-description">A showcase of contemporary sculptures from artists around the world. Witness the creativity and innovation in modern sculpture art.</p>
+            </div>
+        </div>
+        <!-- Add more events as needed -->
+    </div>
+</body>
+</html>
