@@ -1,0 +1,32 @@
+6.Catalog
+
+import java.util.Date;
+public class Catalog {
+    private int artworkId;
+    private String description;
+    private Date dateAdded;
+    public Catalog(int artworkId, String description, Date dateAdded) {
+        this.artworkId = artworkId;
+        this.description = description;
+        this.dateAdded = dateAdded;
+    }
+    public int getArtworkId() {
+        return artworkId;
+    }
+    public void setArtworkId(int artworkId) {
+        this.artworkId = artworkId;
+    }
+    public String getDescription() {
+        return description;
+    }
+    public void setDescription(String description) {
+        this.description = description;
+    }
+    public Date getDateAdded() {
+        return dateAdded;
+    }
+    public void setDateAdded(Date dateAdded) {
+        this.dateAdded = dateAdded;
+    }
+}
+
